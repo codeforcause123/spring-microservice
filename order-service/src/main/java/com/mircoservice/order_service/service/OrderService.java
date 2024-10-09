@@ -45,7 +45,6 @@ public class OrderService {
                 .bodyToMono(InventoryResponse[].class)
                 .block();
 
-
         if (inventoryResponses == null || inventoryResponses.length == 0) {
             throw new IllegalArgumentException("Unable to retrieve inventory information. Please try again later.");
         }
